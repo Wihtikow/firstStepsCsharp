@@ -1,0 +1,50 @@
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static string username;
+        static string password;
+
+        static void Main(string[] args)
+        {
+            Registrieren();
+            Einloggen();
+            Console.ReadKey();
+        }
+        
+        public static void Registrieren()
+        {
+            Console.WriteLine("Gib deinen Usernamen ein: ");
+            username = Console.ReadLine();
+            Console.WriteLine("Gib dein Passwort ein: ");
+            password = Console.ReadLine();
+
+            Console.WriteLine("----------- Herzlich willkommen, {0}! Du hast dich registriert ------------", username);
+        }
+
+        public static void Einloggen()
+        {
+            Console.WriteLine("Logge dich mit Benutzernamen und Passwort ein.");
+            if (username == Console.ReadLine())
+            {
+                Console.WriteLine("Du willst dich als {0} anmelden. Gib das dazugehörige Passwort ein.", username);
+                if (password == Console.ReadLine())
+                {
+                    Console.WriteLine("Du hast dich erfolgreich eingeloggt.");
+                }
+                else
+                {
+                    Console.WriteLine("Login fehlgeschlagen. Bitte überprüfe deine Angaben erneut.");
+                }
+                }
+                else
+                {
+                    Console.WriteLine("Der Username {0} existiert nicht.", username);
+                }
+             }
+
+        }
+    }
+
