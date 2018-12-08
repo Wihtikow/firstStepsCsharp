@@ -1,0 +1,23 @@
+using System;
+
+namespace PracticeJaggedArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[][] introduce = new string[][]
+            {
+                new string[]{ "Matt-Eagle", "Mandy"}, //Familie Mandy
+                new string[]{"Jayden-Jerome","Michelle-Schantalle"}, //Familie Cindy
+                new string[]{"Herbert-Hassfired","Klothilde-Kunigunde"} //Familie Humbrecht
+            };
+            Console.WriteLine("Hallo {0}, kennst du schon meine neuen Freunde {1} und {2}?", introduce[1][0], introduce[0][0], introduce[0][1]);
+            Console.WriteLine("Hallo {0}, kennst du schon meine neuen Freunde {1} und {2}?", introduce[2][0], introduce[1][0], introduce[1][1]);
+            Console.WriteLine("Hallo {0}, kennst du schon meine neuen Freunde {1} und {2}?", introduce[0][1], introduce[2][0], introduce[2][1]);
+
+            Console.ReadKey();
+
+        }
+    }
+}
