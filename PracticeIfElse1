@@ -1,0 +1,31 @@
+using System;
+
+namespace PracticeIfElse1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Aufforderung der Alterseingabe
+            Console.WriteLine("Bevor du die Seite von TABULOSE OMAS MIT PEITSCHEN betreten kannst, müssen wir überprüfen, ob du auch volljährig bist.");
+            Console.WriteLine("Bitte gib dein Alter ein.");
+
+            //Benutzer gibt Alter ein
+            int alter = Convert.ToInt32(Console.ReadLine());
+
+            //Alter wird überprüft 
+            if (alter >= 18)
+            {
+                Console.WriteLine("Herzlichen Glückwunsch! Genieße deine Zeit mit peitschenschwingenden Omas!");
+            }
+            else
+            {
+                Console.WriteLine("Du bist noch etwas zu jung für tabulose Omas.");
+            }
+
+            //Demnächst hinzuzufügen: Meldung bei ungültiger Eingabe (z.B. leerer String)
+            Console.ReadKey();
+
+        }
+    }
+}
