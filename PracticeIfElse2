@@ -1,0 +1,30 @@
+using System;
+
+namespace PracticeIfElse2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Eingabe der Zahl
+            Console.WriteLine("Gib eine beliebige Zahl ein.");
+            int zahl = Convert.ToInt32(Console.ReadLine());
+
+            //Überprüfung ob gerade/ungerade
+            if (zahl % 2 == 0)
+            {
+                Console.WriteLine("Die von dir eingegebene Zahl {0} is gerade.", zahl);
+            }
+            else
+            {
+                Console.WriteLine("Die von dir eingegebene Zahl {0} is ungerade.", zahl);
+            }
+
+
+            //Demnächst hinzuzufügen: Zahlenfeld auf eine Zahl zw 0-100 eingrenzen
+            Console.ReadKey();
+
+        }
+
+    }
+}
