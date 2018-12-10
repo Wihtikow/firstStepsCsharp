@@ -1,0 +1,30 @@
+using System;
+
+namespace PracticeLoop2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Eine Liste von Namen, die nacheinander ausgegeben werden soll
+            string[] listeNamen = new string[5] {"Adelbrecht","Roderich","Siegbert","Claudio","Humbrecht" };
+
+            //Ausgabe mit der for-Schleife
+            for (int i = 0; i < listeNamen.Length; i++)
+            {
+                Console.WriteLine(listeNamen[i]);
+            }
+
+            Console.WriteLine("----------------------------------");
+            Console.ReadKey();
+
+            //Ausgabe mit der for-each-Schleife
+            foreach (string namen in listeNamen)
+            {
+                Console.WriteLine(namen);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
